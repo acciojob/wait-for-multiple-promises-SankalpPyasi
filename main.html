@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise Timing Table</title>
-    <script src="script.js" defer></script>
+    <title>Promise.all() Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
-    <h1>Promise Timing Table</h1>
-    <table border="1">
+
+    <h2>Promise.all() Execution Time</h2>
+
+    <table>
         <thead>
             <tr>
                 <th>Promise</th>
-                <th>Time Taken (Seconds)</th>
+                <th>Time Taken (seconds)</th>
             </tr>
         </thead>
         <tbody id="output">
@@ -21,5 +37,7 @@
             </tr>
         </tbody>
     </table>
+
+    <script src="script.js"></script>
 </body>
 </html>
