@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promise.all() Example</title>
+    <title>Promise.all Table Example</title>
     <style>
         table {
             width: 50%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-        th, td {
+        table, th, td {
             border: 1px solid black;
             padding: 8px;
             text-align: center;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
 
-    <h2>Promise.all() Execution Time</h2>
+<h2>Table Example</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Promise</th>
+            <th>Time (seconds)</th>
+        </tr>
+    </thead>
+    <tbody id="output">
+        <tr>
+            <td colspan="2">Loading...</td>
+        </tr>
+    </tbody>
+</table>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Promise</th>
-                <th>Time Taken (seconds)</th>
-            </tr>
-        </thead>
-        <tbody id="output">
-            <tr>
-                <td colspan="2">Loading...</td>
-            </tr>
-        </tbody>
-    </table>
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
